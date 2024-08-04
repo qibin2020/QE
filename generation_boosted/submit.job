@@ -1,0 +1,10 @@
+executable = run.sh
+arguments = $(Process)
+log = logs/$(ClusterId).$(Process).log
+output = logs/$(ClusterId).$(Process).out
+error = logs/$(ClusterId).$(Process).err
+
+max_materialize = 10
+
+queue 1000
+
